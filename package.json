@@ -14,7 +14,8 @@
     "docs": "typedoc"
   },
   "simple-git-hooks": {
-    "pre-commit": "bun lint-staged"
+    "pre-commit": "bun lint-staged",
+    "commit-msg": "bun commitlint --edit"
   },
   "lint-staged": {
     "*.ts": [
@@ -22,8 +23,8 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.4.4",
-    "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^6.7.4",
     "bun-types": "latest",
